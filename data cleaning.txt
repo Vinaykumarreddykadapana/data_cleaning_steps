@@ -1,0 +1,139 @@
+                        DATA SCIENCE AND MACHINE LEARNING
+			     ===================================
+
+
+------>Steps follows 
+                  ----->Data cleaning 
+			----->feature Engineering
+			----->One Hot Encoding
+			----->Outlier Detection
+			----->Dimensionality Reduction
+
+
+
+1) DATA CLEANING :
+==================
+			----->Steps follows :
+						    1) Import datasets
+						    2) Merge datasets into one datasets
+						    3) Identify errors
+						    4) Standardize processes
+						    5) Scrub for duplicates
+					          6) Valiadate accueracy	
+	
+	1. Data collection from kaggle datasets donwload
+	2. Missing data:
+	   ============= Methods:
+
+		--> Ignore misssing values row/delete row 
+		--> Fill missing value manually
+		--> Global constant		
+		--> Measure of central tendency(Mean,Midian,Mode)
+		--> Measure of central tendency for each class --->
+		--> Most probable value (ML Algoriths)---> here use Linear Reggression, Decision Tree
+		Practical Process :
+ 		===================  By delete row
+					   --------------
+		--> read data by using pandas (pd.read_csv())
+		--> find shape (.shape())
+		--> use head (.head())	
+		--> use tail (.tail())
+		--> use info (.info())
+		--> use set_option
+		--> use isnull ( for finding missing data )
+		--> use isnull.sum() --> gives sum
+		--> plot figure (plt.figure(figsize(25,25))
+		--> sns.heatmap( .isnull())
+		--> if we have no.of columns then go percentile
+			.isnull().sum()/ .shape[0] *100
+
+		--> for finding columns which have more null values 
+			null_var[null_var> condition ].keys() 
+
+		--> now drop columns ( .drop(columns=drop_columns) )
+		--> for deleting rows ( .dropna() ) 
+		--> subplots based on data
+		--> for finding column names that to numerical 
+				(.select_dtypes(include = ['int64','float64']).columns
+  			 
+		--> for finding column names that to characterised
+				(.select_dtypes(include = ['object']).columns
+
+				By Mean and median
+				------------------
+
+		--> read data by using pandas (pd.read_csv())
+		--> find shape (.shape())
+		--> use head (.head())	
+		--> use tail (.tail())
+		--> use info (.info())
+		--> use set_option
+		--> use isnull ( for finding missing data )
+		--> use isnull.sum() --> gives sum
+		--> plot figure (plt.figure(figsize(25,25))
+		--> sns.heatmap( .isnull())
+		--> if we have no.of columns then go percentile
+			.isnull().sum()/ .shape[0] *100
+
+		--> for finding columns which have more null values 
+			null_var[null_var> condition ].keys() 
+
+		--> now drop columns ( .drop(columns=drop_columns) )
+		--> for finding column names that to numerical 
+				(.select_dtypes(include = ['int64','float64']).columns
+  		--> plot subplots
+		--> normal distibution -->mean,median,mode
+		--> random --> median
+		--> based on type apply mean or median
+		-->
+
+				
+				Numerical Missing Value Imputation By Class--> mean ,median
+			     ---------------------------------------------
+		--> take categorical data as reference
+			      Data distrubution
+				------------------
+
+		-->	      Categorical --->use  mode
+				------------
+
+
+
+
+
+
+
+		ML MODELS
+		=========
+		|
+		|========>Supervised Learning ======|---->Regression Model---> 1.Liner Regression
+		|						
+		|						|---->
+		|
+		|
+		|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	
